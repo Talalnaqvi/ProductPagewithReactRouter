@@ -1,0 +1,54 @@
+/* ProductComponent.module.css */
+/* .container{
+         display:grid; 
+     grid-template-rows: 400px 400px 400px; 
+     border:solid red;
+     width:100%;
+     height:100vh;
+     margin-bottom:15px;
+} */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* Adjust min and max width as needed */
+    gap: 4rem; /* Adjust gap between grid items */
+    background-color: #f0f0f0;
+  }
+  .product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 400px;
+    height: 520px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    height: 350px; /* Fixed height for image container */
+   
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%; /* Ensures image fills its container */
+    height: 100%; /* Ensures image fills its container */
+    object-fit: cover; /* Maintains aspect ratio and covers container */
+    border-radius: 8px 8px 0 0; /* Rounded corners for top of image */
+  }
+  
+  .product-name  , .product-price{
+    text-align:center;
+    /* font-size: 0.5rem; */
+  /* font-weight: bold; */
+  /* margin-bottom: 8px; */
+  color: #333;
+  }
+  .product-description{
+    text-align:center;
+    /* font-size: 1rem; */
+  
+  /* margin-bottom: 8px; */
+  color: #333;
+  }
+  
